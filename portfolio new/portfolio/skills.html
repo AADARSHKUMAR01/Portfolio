@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <style>
+        .skills {
+            position: relative;
+            white-space: nowrap;
+            overflow: hidden;
+            padding: 1rem 0;
+            -webkit-mask: linear-gradient(90deg, #0000, #000 10% 80%, #0000);
+        }
+
+        .skills-container {
+            display: inline-flex;
+            animation: scroll 30s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .skill-tag {
+            display: inline-flex;
+            align-items: center;
+            background: #f5f8fa;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            margin: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .skill-img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .skill-tag:hover {
+            transform: scale(1.1);
+            background: #bde4fe;
+            cursor: default;
+        }
+
+        /* Pause animation on hover */
+        .skills:hover .skills-container {
+            animation-play-state: paused;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <!-- First container with skill items -->
+            <div class="skills-container">
+                <span class="skill-tag" title="HTML">
+                    <img class="skill-img" src="https://cdn-icons-png.flaticon.com/128/1051/1051277.png" />
+                </span>
+                <span class="skill-tag" title="CSS">
+                    <img class="skill-img" src="https://cdn-icons-png.flaticon.com/128/732/732190.png" />
+                </span>
+                <span class="skill-tag" title="JavaScript">
+                    <img class="skill-img" src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" />
+                </span>
+                <span class="skill-tag" title="React">
+                    <img class="skill-img" src="https://cdn-icons-png.flaticon.com/128/10303/10303368.png" />
+                </span>
+                <span class="skill-tag" title="Node.js">
+                    <img class="skill-img" src="https://cdn-icons-png.flaticon.com/128/15380/15380914.png" />
+                </span>
+                <span class="skill-tag" title="Python">
+                    <img class="skill-img" src="https://cdn-icons-png.flaticon.com/128/5968/5968350.png" />
+                </span>
+                <span class="skill-tag" title="Java">
+                    <img class="skill-img" src="https://cdn-icons-png.flaticon.com/128/5968/5968282.png" />
+                </span>
+                <span class="skill-tag" title="TypeScript">
+                    <img class="skill-img" src="https://cdn-icons-png.flaticon.com/128/5968/5968381.png" />
+                </span>
+                <span class="skill-tag" title="MongoDB">
+                    <img class="skill-img" src="https://img.icons8.com/?size=160&id=8rKdRqZFLurS&format=png" />
+                </span>
+                <span class="skill-tag" title="SQL">
+                    <img class="skill-img" src="https://cdn-icons-png.flaticon.com/128/4492/4492311.png" />
+                </span>
+                <span class="skill-tag" title="Docker">
+                    <img class="skill-img" src="https://cdn-icons-png.flaticon.com/128/15466/15466088.png" />
+                </span>
+                <span class="skill-tag" title="AWS">
+                    <img class="skill-img" src="https://cdn-icons-png.flaticon.com/128/16574/16574318.png" />
+                </span>
+                <span class="skill-tag" title="GraphQL">
+                    <img class="skill-img" src="https://img.icons8.com/?size=96&id=zdI5E8moxhs-&format=png" />
+                </span>
+                <span class="skill-tag" title="Redux">
+                    <img class="skill-img" src="https://img.icons8.com/?size=96&id=jD-fJzVguBmw&format=png" />
+                </span>
+                <span class="skill-tag" title="Vue.js">
+                    <img class="skill-img" src="https://img.icons8.com/?size=96&id=BUnExfsRs3CW&format=png" />
+                </span>
+            </div>
+            <!-- Second container for seamless scrolling -->
+            <div class="skills-container" aria-hidden="true">
+                <span class="skill-tag" title="HTML">
+                    <img class="skill-img" src="https://cdn-icons-png.flaticon.com/128/1051/1051277.png" />
+                </span>
+                <span class="skill-tag" title="CSS">
+                    <img class="skill-img" src="https://cdn-icons-png.flaticon.com/128/732/732190.png" />
+                </span>
+                <span class="skill-tag" title="JavaScript">
+                    <img class="skill-img" src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" />
+                </span>
+                <span class="skill-tag" title="React">
+                    <img class="skill-img" src="https://cdn-icons-png.flaticon.com/128/10303/10303368.png" />
+                </span>
+                <span class="skill-tag" title="Node.js">
+                    <img class="skill-img" src="https://cdn-icons-png.flaticon.com/128/15380/15380914.png" />
+                </span>
+                <span class="skill-tag" title="Python">
+                    <img class="skill-img" src="https://cdn-icons-png.flaticon.com/128/5968/5968350.png" />
+                </span>
+                <span class="skill-tag" title="Java">
+                    <img class="skill-img" src="https://cdn-icons-png.flaticon.com/128/5968/5968282.png" />
+                </span>
+                <span class="skill-tag" title="TypeScript">
+                    <img class="skill-img" src="https://cdn-icons-png.flaticon.com/128/5968/5968381.png" />
+                </span>
+                <span class="skill-tag" title="MongoDB">
+                    <img class="skill-img" src="https://img.icons8.com/?size=160&id=8rKdRqZFLurS&format=png" />
+                </span>
+                <span class="skill-tag" title="SQL">
+                    <img class="skill-img" src="https://cdn-icons-png.flaticon.com/128/4492/4492311.png" />
+                </span>
+                <span class="skill-tag" title="Docker">
+                    <img class="skill-img" src="https://cdn-icons-png.flaticon.com/128/15466/15466088.png" />
+                </span>
+                <span class="skill-tag" title="AWS">
+                    <img class="skill-img" src="https://cdn-icons-png.flaticon.com/128/16574/16574318.png" />
+                </span>
+                <span class="skill-tag" title="GraphQL">
+                    <img class="skill-img" src="https://img.icons8.com/?size=96&id=zdI5E8moxhs-&format=png" />
+                </span>
+                <span class="skill-tag" title="Redux">
+                    <img class="skill-img" src="https://img.icons8.com/?size=96&id=jD-fJzVguBmw&format=png" />
+                </span>
+                <span class="skill-tag" title="Vue.js">
+                    <img class="skill-img" src="https://img.icons8.com/?size=96&id=BUnExfsRs3CW&format=png" />
+                </span>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
